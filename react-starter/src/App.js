@@ -3,9 +3,10 @@ import TweetList from "./components/TweetList";
 import { useState } from "react";
 
 function App() {
+  //States
+  const [textInput, setTextInput] = useState("");
+  const [tweets, setTweets] = useState([]);
   const name = "Daniel da Conceição Marques";
-  const message = "Hello Brother";
-
   const [namer, setNamer] = useState("Daniel Marques");
 
   const stayCool = (e) => {
@@ -16,10 +17,14 @@ function App() {
   return (
     <div className="App">
       <h1>{namer}</h1>
-      <CreateTweet />
-      {/* <TweetList name={name} message={message} /> */}
-
+      <CreateTweet
+        textInput={textInput}
+        setTextInput={setTextInput}
+        tweets={tweets}
+        setTweets={setTweets}
+      />
       <button onClick={stayCool}>Change Name</button>
+      <TweetList name={name} tweets={tweets} />
     </div>
   );
 }

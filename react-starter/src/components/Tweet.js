@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 
-const Tweet = ({ name, message }) => {
+const Tweet = ({ name, tweets }) => {
   const sayHello = (user) => {
     console.log(`${user} nice to meet you`);
   };
@@ -9,7 +9,7 @@ const Tweet = ({ name, message }) => {
     <div className="tweet" style={{ backgroundColor: "#cfe8fc" }}>
       <hr />
       <h3>Name: {name}</h3>
-      <h3>Message: {message}</h3>
+      <h3>Message: {tweets}</h3>
       <br />
       <Button
         variant="contained"
