@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React from "react";
+//, { useState }
 const CreateTweet = ({ tweets, setTweets, textInput, setTextInput }) => {
   //Functions
   const useInputHandler = (e) => {

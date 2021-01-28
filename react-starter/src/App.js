@@ -24,7 +24,7 @@ function App() {
         setTweets={setTweets}
       />
       <button onClick={stayCool}>Change Name</button>
-      <TweetList name={name} tweets={tweets} />
+      <TweetList name={name} tweets={tweets} setTweets={setTweets} />
     </div>
   );
 }

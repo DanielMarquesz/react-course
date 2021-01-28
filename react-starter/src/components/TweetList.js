@@ -1,17 +1,18 @@
 import React from "react";
 import Tweet from "./Tweet";
-import Container from "@material-ui/core/Container";
+// import Container from "@material-ui/core/Container";
 
-const TweetList = ({ name, tweets }) => {
+const TweetList = ({ tweet, name, tweets, setTweets }) => {
   return (
     <div className="tweet-list">
-      <hr />
-      <h2>List of Tweets</h2>
-      <div>
-        <Container>
-          <Tweet name={name} tweets={tweets} />
-        </Container>
-      </div>
+      {tweets.map((tweet) => (
+        <Tweet
+          name={name}
+          tweet={tweet}
+          setTweets={setTweets}
+          tweets={tweets}
+        />
+      ))}
     </div>
   );
 };
