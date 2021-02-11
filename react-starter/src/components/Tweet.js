@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
+import "../styles/Tweet.scss";
 
 const Tweet = ({ name, tweet, tweets, setTweets }) => {
   const deleteTweet = () => {
@@ -9,7 +10,7 @@ const Tweet = ({ name, tweet, tweets, setTweets }) => {
     <div className="tweet" style={{ backgroundColor: "#cfe8fc" }}>
       <hr />
       <h3>Name: {name}</h3>
-      <h3>Message: {tweet.message}</h3>
+      <h3 className="color-text">Message: {tweet.message}</h3>
       <br />
       <Button variant="contained" color="primary" onClick={deleteTweet}>
         Delete
