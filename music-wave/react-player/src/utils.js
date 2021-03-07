@@ -61,17 +61,7 @@ function chillHop() {
       id: uuidv4(),
       active: false,
     },
-    {
-      name: "Still Feel",
-      cover:
-        "https://postparisfashion.files.wordpress.com/2018/08/halfalive.jpg?w=980&h=980&crop=1",
-      artist: "Half Alive",
-      audio:
-        "https://www.youtube.com/watch?v=KOOhPfMbuIQ&list=RDhAsWOLN4Qhw&index=9",
-      color: ["#213549", "#2ab3bf"],
-      id: uuidv4(),
-      active: false,
-    },
+    
     //ADD MORE HERE
   ];
 }
